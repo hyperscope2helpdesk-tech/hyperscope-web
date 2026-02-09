@@ -1,11 +1,56 @@
+HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hyperscope | High-Speed FPGA Trace Tool</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 0 20px; }
+        header { border-bottom: 2px solid #eee; padding-bottom: 20px; margin-bottom: 40px; }
+        h1 { color: #0366d6; margin-bottom: 5px; }
+        .tagline { color: #666; font-size: 1.2em; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 30px 0; }
+        .card { border: 1px solid #ddd; padding: 15px; border-radius: 6px; }
+        .cta { background: #28a745; color: white; padding: 15px 25px; text-decoration: none; border-radius: 6px; display: inline-block; font-weight: bold; }
+        code { background: #f6f8fa; padding: 2px 5px; border-radius: 3px; }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <header>
+        <h1>Hyperscope</h1>
+        <p class="tagline">Next-Generation FPGA Debugging & Trace for Xilinx Ecosystems.</p>
+    </header>
+
+    <section>
+        <h2>The Power of Real-Time Visibility</h2>
+        <p>Hyperscope bridges the gap between hardware and host. Utilizing the <strong>FT232H FT1248 protocol</strong>, it delivers high-bandwidth trace data directly from your FPGA PMOD to your workstation.</p>
+    </section>
+
+    <div class="grid">
+        <div class="card">
+            <h3>🚀 High Performance</h3>
+            <p>Achieve up to 100 Mbps throughput using a single PMOD. Optimized for Basys 3 and ZCU102 boards.</p>
+        </div>
+        <div class="card">
+            <h3>🛠️ Easy Integration</h3>
+            <p>Drop-in IP core for Vivado. Supports 4-bit FT1248 mode with minimal logic overhead.</p>
+        </div>
+    </div>
+
+    <section>
+        <h2>Technical Specifications</h2>
+        <ul>
+            <li><strong>Interface:</strong> FT1248 (4-bit Wide)</li>
+            <li><strong>Clocking:</strong> FPGA-Mastered (25-30 MHz)</li>
+            <li><strong>Support:</strong> Xilinx 7-Series & UltraScale+</li>
+            <li><strong>Host Software:</strong> C++/Python D2XX API</li>
+        </ul>
+    </section>
+
+    <section style="margin-top: 50px; text-align: center; border-top: 1px solid #eee; padding-top: 30px;">
+        <h2>Ready to upgrade your workflow?</h2>
+        <p>Hyperscope is currently in private beta.</p>
+        <a href="mailto:your-email@example.com" class="cta">Request Access / Contact Sales</a>
+    </section>
 </body>
 </html>
